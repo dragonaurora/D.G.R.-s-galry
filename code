@@ -1,0 +1,136 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 25%;
+    height: 25%
+    
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 5%;
+    text-align: center;
+}
+
+h1, h2 {
+  display: inline;
+  background: #fff;
+
+}
+
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   div.gallery {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   div.gallery {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   div.gallery {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+@media only screen and (max-width : 2560px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   div.gallery {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+}
+
+h1 {
+  font-size: 30px
+}
+h2 {
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<div>
+<center><h1>Welcome to My Online Gallery</h1><br>
+<h2>(these are some of my favorite photos)</h2><center>
+</div>
+<br>
+<hr>
+<br>
+<div class="gallery">
+  <a target="_blank" href="<img src="http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/activityandadventure/The-worlds-most-beautiful-mountains/mountains-fitzroy_3374108a.jpg" alt="Image result"/>">
+    <img src="http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/activityandadventure/The-worlds-most-beautiful-mountains/mountains-fitzroy_3374108a.jpg" alt="Fjords" width="300" height="200">
+  </a>
+  <div class="desc">This is a mountain</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Brazilian_amazon_rainforest.jpg/1200px-Brazilian_amazon_rainforest.jpg">
+    <img src="data:image/jpeg;base64,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" alt="Forest" width="300" height="200">
+  </a>
+  <div class="desc">This is a waterfall</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="http://i2.cdn.turner.com/money/dam/assets/170320165915-most-diamonds-are-cut-in-this-indian-city-00000217-1024x576.jpg">
+    <img src="https://i.imgur.com/Mbku9FH.jpg">
+  </a>
+  <div class="desc">This is an Aurora or Northern light</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/activityandadventure/The-worlds-most-beautiful-mountains/mountains-Kirkjufe_3374110a.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Aurora_Borealis_I.jpg/400px-Aurora_Borealis_I.jpg">
+  </a>
+  <div class="desc">This is an Aurora or Northern light</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="http://www.cajunmanadventures.com/wp-content/uploads/2015/06/Swampland7.jpg">
+    <img src="https://www.sciencedaily.com/images/2017/08/170802083322_1_900x600.jpg">
+  </a>
+  <div class="desc">This is a flower</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://static.pexels.com/photos/158489/yellowstone-national-park-sunset-twilight-dusk-158489.jpeg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjksTSiD8j4uIkaMffgkG4wZ3lv8ioxM0H5rjUs8oucWkGzpj2">
+  </a>
+  <div class="desc">This is an Aurora or Northern light</div>
+</div>
+https:lass="gallery">
+  <a target="_blank" href="<img src="<img src="http://static3.visitfinland.com/wp-content/uploads/HT4A1218-400x300.jpg" alt="Image result for This is an Aurora or Northern light"/>"/>">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuV7GIlBHfQmAQH7jtaI_bem1X8dG2Epseml4jCdqaK2xrTW1h">
+  </a>
+  <div class="desc">This is an Aurora or Northern light</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="https://static.pexels.com/photos/158489/yellowstone-national-park-sunset-twilight-dusk-158489.jpeg">
+    <img src="http://static3.visitfinland.com/wp-content/uploads/HT4A1218-400x300.jpg">
+  </a>
+  <div class="desc">This is an Aurora or Northern light</div>
+</div>
